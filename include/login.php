@@ -3,7 +3,7 @@
 if (isset($_POST['login'])) {
     $tabErreur = array();
     $mail = $_POST['mail'];
-    $password = $_POST['password'];
+    $password = $_POST['mdp'];
     if ($mail == "")
         array_push($tabErreur, "Veuillez saisir une adresse");
     if ($password == "")
@@ -25,20 +25,15 @@ if (isset($_POST['login'])) {
         else {
             $password = sha1($password);
             $requete = "SELECT * FROM t_users WHERE USERMAIL='$mail' AND USERPASSWORD='$password'";
-            if($result = mysqli_query($connexion, $requete)) {
-                if (mysqli_num_rows($result) > 0) {
-                    $_SESSION['login'] = 1;
-                    echo ("<a href=\"index.php?page=accueil\">Vous êtes authentifié, viendez à la page d'accueil</a>");
-                }
-                else
-                    $_SESSION['login'] = 0;
-            }
+            die($requete);
+            mysqli_query($connexion, $requete);
+            mysqli_close($connexion);
         }
-        mysqli_close($connexion);
     }
 }
 else {
     include ("./include/formLogin.php");
+}
 }
 /*$pass_hache = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
 // Vérification des identifiants
