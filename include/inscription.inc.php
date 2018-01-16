@@ -24,7 +24,7 @@ if(isset($_POST["formulaire"])) {
         include("./include/formInscription.php");
     }
     else {
-        $connexion = mysqli_connect("localhost", "NFactoryBlog", "NFactoryBlog", "nfactoryblog");
+        $connexion = mysqli_connect("localhost", "nfactoryblog", "nfactoryblog", "nfactoryblog");
         if (!$connexion) {
             die("Erreur MySQL " . mysqli_connect_errno() . " : " . mysqli_connect_error());
         }
@@ -32,10 +32,12 @@ if(isset($_POST["formulaire"])) {
             $requete = "INSERT INTO t_users (ID_USER, USERNAME, USERFNAME,
                         USERMAIL, USERPASSWORD, USERDATEINS, T_ROLES_ID_ROLE)
                         VALUES (NULL, '$nom', '$prenom', '$mail', '$mdp', NULL, 5);";
+
             if(mysqli_query($connexion, $requete))
                 echo("<p>Votre inscription a bien été effectuée. Vous allez prochainement recevoir un mail de confirmation.</p>");
             else
                 echo("<p>Erreur sur la base de données, veuillez réessayer.</p>");
+
             mysqli_close($connexion);
         }
     }

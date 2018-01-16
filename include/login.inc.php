@@ -18,7 +18,7 @@ if (isset($_POST['login'])) {
         include ("./include/formLogin.php");
     }
     else {
-        $connexion = mysqli_connect("localhost", "NFactoryBlog", "NFactoryBlog", "nfactoryblog");
+        $connexion = mysqli_connect("localhost", "nfactoryblog", "nfactoryblog", "nfactoryblog");
         if (!$connexion) {
             die("Erreur MySQL " . mysqli_connect_errno() . " : " . mysqli_connect_error());
         }

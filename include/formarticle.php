@@ -10,11 +10,11 @@
     </div>
     <div>
         <label for="contenu">Contenu :</label>
-        <textarea id="article" name="article"></textarea>
+        <textarea id="article" name="contenu"></textarea>
     </div>
     <div>
-        <input type="reset" value="Effacer" name="article" />
-        <input type="submit" value="Envoyer" />
+        <input type="reset" value="Effacer"  />
+        <input type="submit" value="Envoyer" name="articles"/>
     </div>
 </form>
 
