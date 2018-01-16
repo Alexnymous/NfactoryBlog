@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="378d7d78-df62-44d2-a944-5afbc9b75792" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/functions/query.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/include/formLogin.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/include/accueil.inc.php" afterPath="$PROJECT_DIR$/include/accueil.inc.php" />
       <change beforePath="$PROJECT_DIR$/include/articleWrite.inc.php" afterPath="$PROJECT_DIR$/include/articleWrite.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/compte.inc.php" afterPath="$PROJECT_DIR$/include/compte.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/formarticle.php" afterPath="$PROJECT_DIR$/include/formarticle.php" />
-      <change beforePath="$PROJECT_DIR$/include/inscription.inc.php" afterPath="$PROJECT_DIR$/include/inscription.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/login.inc.php" afterPath="$PROJECT_DIR$/include/login.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/logout.php" afterPath="$PROJECT_DIR$/include/logout.inc.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,44 +15,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/include/footer.php">
+      <file leaf-file-name="articleWrite.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/articleWrite.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accueil.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/accueil.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <marker date="1516110691437" expanded="true" signature="161:218" ph="SELECT * FRO... t_articles" />
+                <marker date="1516116931326" expanded="true" signature="996:1125" ph="INSERT INTO `t_articles`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/javascript/function.js">
+      <file leaf-file-name="accueil.inc.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/accueil.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/logout.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="102">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding>
+                <marker date="1516118751427" expanded="true" signature="161:224" ph="SELECT * FRO... t_articles" />
+                <marker date="1516118751427" expanded="true" signature="161:225" ph="SELECT * FRO... t_articles" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,13 +54,13 @@
         <option value="$PROJECT_DIR$/include/login.inc.php" />
         <option value="$PROJECT_DIR$/include/inscription.inc.php" />
         <option value="$PROJECT_DIR$/include/recentArticles.php" />
-        <option value="$PROJECT_DIR$/include/accueil.inc.php" />
         <option value="$PROJECT_DIR$/include/compte.inc.php" />
-        <option value="$PROJECT_DIR$/include/articleWrite.inc.php" />
         <option value="$PROJECT_DIR$/include/formArticle.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/include/logout.php" />
         <option value="$PROJECT_DIR$/include/logout.inc.php" />
+        <option value="$PROJECT_DIR$/include/articleWrite.inc.php" />
+        <option value="$PROJECT_DIR$/include/accueil.inc.php" />
       </list>
     </option>
   </component>
@@ -96,9 +71,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="990" />
+    <option name="width" value="937" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -187,15 +162,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516091776973</updated>
-      <workItem from="1516091779379" duration="16319000" />
+      <workItem from="1516091779379" duration="18748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16319000" />
+    <option name="totallyTimeSpent" value="18748000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.102604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -361,31 +336,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/accueil.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <marker date="1516110691437" expanded="true" signature="161:218" ph="SELECT * FRO... t_articles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/articleWrite.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <marker date="1516112964216" expanded="true" signature="995:1124" ph="INSERT INTO `t_articles`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/articleWrite.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1516116931326" expanded="true" signature="996:1125" ph="INSERT INTO `t_articles`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/accueil.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <marker date="1516118751427" expanded="true" signature="161:224" ph="SELECT * FRO... t_articles" />
+            <marker date="1516118751427" expanded="true" signature="161:225" ph="SELECT * FRO... t_articles" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -6,6 +6,7 @@ if(isset($_POST["articles"])) {
     $chapo = $_POST['chapo'];
     $contenu = $_POST['contenu'];
 
+
     if ($_POST["title"] == "")
         array_push($tabErreur, "Veuillez saisir votre titre");
     if ($_POST["chapo"] == "")
