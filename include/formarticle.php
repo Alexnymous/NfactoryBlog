@@ -13,7 +13,9 @@
         <textarea id="article" name="article"></textarea>
     </div>
     <div>
-        <input type="reset" value="Effacer" />
+        <input type="reset" value="Effacer" name="article" />
         <input type="submit" value="Envoyer" />
     </div>
 </form>
+
+

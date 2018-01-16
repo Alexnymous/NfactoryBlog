@@ -32,12 +32,14 @@ if(isset($_POST["formulaire"])) {
             $requete = "INSERT INTO t_users (ID_USER, USERNAME, USERFNAME,
                         USERMAIL, USERPASSWORD, USERDATEINS, T_ROLES_ID_ROLE)
                         VALUES (NULL, '$nom', '$prenom', '$mail', '$mdp', NULL, 5);";
-            mysqli_query($connexion, $requete);
+            if(mysqli_query($connexion, $requete))
+                echo("<p>Votre inscription a bien été effectuée. Vous allez prochainement recevoir un mail de confirmation.</p>");
+            else
+                echo("<p>Erreur sur la base de données, veuillez réessayer.</p>");
             mysqli_close($connexion);
         }
     }
 }
 else {
-    echo("Je viens d'ailleurs");
     include("./include/formInscription.php");
 }
