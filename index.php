@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+    setcookie('mail', 'mail', time() + 1*24*3600, null, null, false, true); // On écrit un cookie
+
+    setcookie('pays', 'France', time() + 1*24*3600, null, null, false, true); // On écrit un autre cookie...
+
 include_once("./functions/callPage.php");
 include_once("./functions/query.php");
 ?>

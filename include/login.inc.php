@@ -1,5 +1,15 @@
 <h1>Login</h1>
 <?php
+
+// on teste la déclaration de notre cookie
+if (isset($_COOKIE['pseudo'])) {
+	echo 'Bonjour '.$_COOKIE['pseudo'].' !';
+}
+else {
+	echo '';
+
+}
+
 if (isset($_POST['login'])) {
     $tabErreur = array();
     $mail = $_POST['mail'];

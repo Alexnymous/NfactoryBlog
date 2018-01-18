@@ -8,12 +8,16 @@
         <input type="text" name="prenom" />
     </div>
     <div>
-        <label for="mail">e-mail : </label>
-        <input type="text" name="mail" />
+        <label for="mail">E-mail : </label>
+        <input type="email" name="mail" />
     </div>
     <div>
         <label for="mdp">Mot de passe : </label>
         <input type="password" name="mdp" />
+    </div>
+    <div>
+        <label for="confirmdp">Confirmation mot de passe : </label>
+        <input type="password" name="confirmdp" />
     </div>
     <div>
         <input type="reset" value="Effacer" />
