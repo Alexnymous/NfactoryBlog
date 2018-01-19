@@ -35,7 +35,9 @@ if(isset($_POST["articles"])) {
     else
         echo "Votre n'a pas pu être publié";
     mysqli_close($connexion);
-}
+    }
+
+
 
 else{
     include("./include/formArticle.php");
