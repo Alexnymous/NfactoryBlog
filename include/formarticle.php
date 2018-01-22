@@ -5,7 +5,7 @@
         <input type="text" name="title" />
     </div>
     <div>
-        <label for="chapo">Chapô :</label>
+        <label for="categorie">Catégorie :</label>
         <input type="text" name="chapo" />
     </div>
     <div>

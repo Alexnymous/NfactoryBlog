@@ -3,13 +3,13 @@
 if(isset($_POST["articles"])) {
     $tabErreur = array();
     $titre = $_POST['title'];
-    $chapo = $_POST['chapo'];
+    $chapo = $_POST['categorie'];
     $contenu = $_POST['contenu'];
 
 
     if ($_POST["title"] == "")
         array_push($tabErreur, "Veuillez saisir votre titre");
-    if ($_POST["chapo"] == "")
+    if ($_POST["categorie"] == "")
         array_push($tabErreur, "Veuillez saisir votre catégorie");
     if ($_POST["contenu"] == "")
         array_push($tabErreur, "Veuillez saisir votre contenu");
