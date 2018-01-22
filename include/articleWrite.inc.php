@@ -1,45 +1,52 @@
 <?php
+$dsn = "mysql:dbname=nfactoryblog;
+        host=localhost;
+        charset=utf8";
 
-if(isset($_POST["articles"])) {
+$username = "root";
+$password = "";
+
+if(isset(($_POST["article"]) && ($_POST["title"]) && ($_POST["categorie"]))) {
+
+    $db = new PDO ($dsn, $username, $password);
+
     $tabErreur = array();
-    $titre = $_POST['title'];
+    $title = $_POST['title'];
     $chapo = $_POST['categorie'];
-    $contenu = $_POST['contenu'];
-
-
-    if ($_POST["title"] == "")
-        array_push($tabErreur, "Veuillez saisir votre titre");
-    if ($_POST["categorie"] == "")
-        array_push($tabErreur, "Veuillez saisir votre catégorie");
-    if ($_POST["contenu"] == "")
-        array_push($tabErreur, "Veuillez saisir votre contenu");
-
-    if (count($tabErreur) != 0) {
+    $article = $_POST['article'];
+    if($_POST["title"] == "")
+        array_push($tabErreur, "Veuillez saisir un titre");
+    if($_POST["categorie"] == "")
+        array_push($tabErreur, "Veuillez saisir un sous-titre");
+    if($_POST["article"] == "")
+        array_push($tabErreur, "Veuillez saisir un article");
+    $title = addslashes(htmlentities($title));
+    $chapo = addslashes(htmlentities($chapo));
+    $article = addslashes(htmlentities($_POST['article']));
+    if(count($tabErreur) != 0) {
         $message = "<ul>";
-        for ($i = 0; $i < count($tabErreur); $i++) {
+        for($i = 0 ; $i < count($tabErreur) ; $i++) {
             $message .= "<li>" . $tabErreur[$i] . "</li>";
         }
         $message .= "</ul>";
+        echo($message);
     }
 
-    include("./include/formArticle.php");
+        else {
+            $requete = "INSERT INTO t_articles (ID_ARTICLE, ARTTITRE, ARTCHAPO,
+                        ARTCONTENU, ARTDATE)
+                        VALUES (NULL, '$title', '$chapo', '$article', NOW());";
 
-    $connexion = mysqli_connect("localhost", "nfactoryblog", "nfactoryblog", "nfactoryblog");
-    $contenu = addslashes(htmlentities($contenu));
-    $chapo = addslashes(utf8_decode(htmlentities($chapo)));
-    $titre = addslashes(utf8_decode(htmlentities($titre)));
-    $requete2 = "INSERT INTO `t_articles` (ID_ARTICLE, ARTTITRE, ARTCHAPO,ARTCONTENU,ARTDATE) VALUES (NULL, '$titre', '$chapo', '$contenu', NOW())";
+            $new = $db -> exec($sql);}
 
-    if (mysqli_query($connexion, $requete2))
-        echo "Votre article est publié";
-    else
-        echo "Votre n'a pas pu être publié";
-    mysqli_close($connexion);
-    }
+            if(mysqli_query($connexion, $requete))
+                echo "<p>Votre article a bien été ajouté.</p>";
+            else
+                echo "<p>Erreur base de données.</p>";
+            mysqli_close($connexion);
 
+            unset($db);}
 
+    include ("./include/formArticle.php");
 
-else{
-    include("./include/formArticle.php");
-}
 
